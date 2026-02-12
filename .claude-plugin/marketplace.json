@@ -12,7 +12,7 @@
     {
       "name": "ask-questions-if-underspecified",
       "version": "1.0.1",
-      "description": "Clarify requirements before implementing. When doubting, ask questions.",
+      "description": "Clarify ambiguous requirements by asking questions before implementing. Only when invoked explicitly.",
       "author": {
         "name": "Kevin Valerio",
         "email": "opensource@trailofbits.com",
@@ -41,11 +41,20 @@
     {
       "name": "burpsuite-project-parser",
       "version": "1.0.0",
-      "description": "Search and extract data from Burp Suite project files (.burp) for use in Claude",
+      "description": "Search and extract data from Burp Suite project files (.burp) for security analysis",
       "author": {
         "name": "Will Vandevanter"
       },
       "source": "./plugins/burpsuite-project-parser"
+    },
+    {
+      "name": "claude-in-chrome-troubleshooting",
+      "version": "1.0.0",
+      "description": "Diagnose and fix Claude in Chrome MCP extension connectivity issues",
+      "author": {
+        "name": "Dan Guido"
+      },
+      "source": "./plugins/claude-in-chrome-troubleshooting"
     },
     {
       "name": "constant-time-analysis",
@@ -226,7 +235,7 @@
     {
       "name": "insecure-defaults",
       "version": "1.0.0",
-      "description": "Detects and verifies insecure default configurations including hardcoded credentials, fallback secrets, weak authentication defaults, and dangerous configuration values that remain active in production",
+      "description": "Detects insecure default configurations including hardcoded credentials, fallback secrets, weak authentication defaults, and dangerous values in production",
       "author": {
         "name": "Trail of Bits",
         "email": "opensource@trailofbits.com",
@@ -236,7 +245,7 @@
     },
     {
       "name": "second-opinion",
-      "version": "1.0.0",
+      "version": "1.2.0",
       "description": "Runs code reviews using external LLM CLIs (OpenAI Codex, Google Gemini) on uncommitted changes, branch diffs, or specific commits",
       "author": {
         "name": "Dan Guido"
